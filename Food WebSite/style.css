@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Lobster&family=Ysabeau+Office:wght@500&family=Ysabeau+SC:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --navbar-height: 59px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    top: 0px;
+}
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    margin: 3px 6px;
+    height: 80px;
+    border: 1px transparent;
+    border-radius: 200px;
+    width: 100px;
+    transition: .5s ease;
+}
+
+#logo img:hover{
+    box-shadow: 0 10px 20px #000000;
+    border: 1px transparent;
+}
+
+#navbar {
+    position: sticky;
+    z-index: 1000;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-family: 'Alegreya', serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Ysabeau Office', sans-serif;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    display: block;
+    color: white;
+    border-radius: 23px;
+    padding: 3px 22px;
+    border: 20px;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+#navbar ul li a:hover {
+    color: rgb(184, 183, 183);
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 630px;
+    padding: 3px 200px;
+    padding-bottom: 150px;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url(background.jpg) no-repeat center/cover;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Alegreya', serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Ysabeau Office', sans-serif;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+#home p {
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Alegreya', serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Ysabeau Office', sans-serif;
+    font-family: 'Ysabeau SC', sans-serif;
+    text-align: center;
+}
+
+#client-section {
+    position: relative;
+    height: 344px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(background3.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+#clients {
+    display: flex;
+    content: "";
+    justify-content: center;
+    text-align: center;
+}
+
+#clients img {
+    height: 124px;
+}
+
+.client-item {
+    padding: 34px;
+    transition: 0.5s ease;
+}
+
+.client-item:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.h-primary {
+    font-size: 3.8rem;
+}
+
+.h-secondary {
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: gray;
+    color: white;
+    margin: 17px;
+    border-radius: 23px;
+    font-size: 1.3rem;
+    font-family: 'Alegreya', serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Ysabeau Office', sans-serif;
+    font-family: 'Ysabeau SC', sans-serif;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    scale: 1.2;
+    transform: translateY(-5px);
+}
+
+.center {
+    text-align: center;
+    font-family: 'Alegreya', serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Ysabeau Office', sans-serif;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+.services {
+    margin: 34px;
+    display: flex;
+}
+
+.services .box {
+    border: 2px solid gray;
+    padding: 34px;
+    /* overflow: hidden; */
+    margin: 25px 25px;
+    border-radius: 28px;
+    transition: .5s ease;
+    background: #f0f0f0;
+}
+
+.services .box:hover{
+    box-shadow: 5px 12px 25px 1px #000000;
+}
+
+.services .box img {
+    height: 200px;
+    margin: auto;
+    display: block;
+}
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(background2.jpg) no-repeat center center/cover;
+}
+
+footer {
+    background: black;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 9px 20px;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Alegreya', serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Ysabeau Office', sans-serif;
+    font-family: 'Ysabeau SC', sans-serif;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+}
+
+#contact-box input {
+    width: 100%;
+    font-family: 'Alegreya', serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Ysabeau Office', sans-serif;
+    font-family: 'Ysabeau SC', sans-serif;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+}
+
+.form-group {
+    padding: 10px;
+    transition: 0.5s ease;
+}
+
+.btn-sm {
+    font-family: 'Alegreya', serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Ysabeau Office', sans-serif;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 1.1rem;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    margin: auto;
+    border-radius: 23px;
+    cursor: pointer;
+    border: 2px solid white;
+    padding: 1rem;
+    width: 150px;
+    transition: 0.5s ease;
+    background-color: black;
+    color: white;
+}
+
+.btn-sm:hover {
+    scale: 1.2;
+    transform: translateY(-5px);
+}
